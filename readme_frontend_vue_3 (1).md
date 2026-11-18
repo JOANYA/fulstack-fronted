@@ -2,6 +2,8 @@
 
 Interfaz web desarrollada en **Vue 3**, **Pinia** y **Tailwind CSS** que consume la API REST en Laravel para administrar productos, categorías y visualizar métricas en tiempo real.
 
+> 🔗 **Repositorio Backend asociado:** [https://github.com/JOANYA/fullsctack-backend](https://github.com/JOANYA/fullsctack-backend)
+
 ---
 
 ## 🛠️ Tecnologías Utilizadas
@@ -19,7 +21,7 @@ Interfaz web desarrollada en **Vue 3**, **Pinia** y **Tailwind CSS** que consume
 
 * **Node.js** (versión 18 o superior recomendada)
 * **npm** o **yarn**
-* Tener el **Backend (Laravel)** corriendo previamente.
+* Tener el **Backend (Laravel)** corriendo previamente (`http://127.0.0.1:8000`).
 
 ---
 
@@ -29,8 +31,8 @@ Sigue estos pasos para levantar el frontend en tu máquina local:
 
 ### 1. Clonar el repositorio
 ```bash
-git clone <URL_DE_TU_REPOSITORIO_FRONTEND>
-cd <NOMBRE_DE_LA_CARPETA_FRONTEND>
+git clone https://github.com/JOANYA/fulstack-fronted.git
+cd fulstack-fronted
 ```
 
 ### 2. Instalar dependencias de Node
@@ -68,7 +70,6 @@ Cuando vayas a desplegar el proyecto en plataformas como **Vercel**, **Netlify**
 1. Configura la variable de entorno en tu plataforma de hosting:
    * **Nombre:** `VITE_API_URL`
    * **Valor:** `https://tu-dominio-backend.com` *(la URL pública de tu API Laravel)*
-
 2. Genera los archivos estáticos optimizados con:
    ```bash
    npm run build
